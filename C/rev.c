@@ -1,22 +1,35 @@
 #include <stdio.h>
-/* 파일 복사 프로그램 */
-int main(int argc, char *argv[])
-{
-	char c;
-	FILE *fp1, *fp2;
-	if (argc !=3) {
-		fprintf(stderr, "사용법: %s 파일1 파일2\n", argv[0]);
-		return 1;
-	}
-	fp1 = fopen(argv[1], "r");
-	if (fp1 == NULL) {
-		fprintf(stderr, "파일 %s 열기 오류\n", argv[1]);
-		return 2;
-	}
-	fp2 = fopen(argv[2], "w");
-	while ((c = fgetc(fp1)) != EOF)
-		fputc(c, fp2);
-	fclose(fp1);
-	fclose(fp2);
-	return 0;
+#include <string.h>
+
+void reverse(char *str) {
+    int start = 0;
+    int end = strlen(str) - 1;
+
+    while (start < end) {
+        // 문자 위치를 스왑합니다.
+        char temp = str[start];
+        str[start] = str[end];
+        str[end] = temp;
+
+        // 다음 문자로 이동합니다.
+        start++;
+        end--;
+    }
+}
+
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        printf("Usage: %s <string>\n", argv[0]);
+        return 1;
+    }
+
+    char *input = argv[1];
+
+    // 입력된 문자열을 뒤집습니다.
+    reverse(input);
+
+    // 뒤집힌 문자열을 출력합니다.
+    printf("%s\n", input);
+
+    return 0;
 }
