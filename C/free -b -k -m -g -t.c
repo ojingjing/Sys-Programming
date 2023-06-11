@@ -4,7 +4,7 @@
 #include <sys/sysinfo.h>
 #include <string.h>
 
-void print_memory_info(int bytes, int kilobytes, int megabytes, int gigabytes, int tebibytes, int pebibytes, int show_total) {
+void print_memory_info(int bytes, int kilobytes, int megabytes, int gigabytes, int show_total) {
     struct sysinfo info;
     if (sysinfo(&info) != 0) {
         fprintf(stderr, "Error retrieving system memory information.\n");
@@ -14,13 +14,7 @@ void print_memory_info(int bytes, int kilobytes, int megabytes, int gigabytes, i
     unsigned long unit = 1;
     char unit_str[4] = "B";
 
-    if (tebibytes) {
-        unit <<= 40;
-        strcpy(unit_str, "TiB");
-    } else if (pebibytes) {
-        unit <<= 50;
-        strcpy(unit_str, "PiB");
-    } else if (gigabytes) {
+    if (gigabytes) {
         unit <<= 30;
         strcpy(unit_str, "GiB");
     } else if (megabytes) {
@@ -30,15 +24,13 @@ void print_memory_info(int bytes, int kilobytes, int megabytes, int gigabytes, i
         unit <<= 10;
         strcpy(unit_str, "KiB");
     }
-
-    unsigned long total_mem = info.totalram / unit;
+ 
     unsigned long used_mem = (info.totalram - info.freeram) / unit;
     unsigned long free_mem = info.freeram / unit;
     unsigned long shared_mem = info.sharedram / unit;
     unsigned long buffer_cache = info.bufferram / unit;
     unsigned long available_mem = (info.freeram + info.bufferram) / unit;
 
-    printf("Total memory: %lu%s\n", total_mem, unit_str);
     printf("Used memory: %lu%s\n", used_mem, unit_str);
     printf("Free memory: %lu%s\n", free_mem, unit_str);
     printf("Shared memory: %lu%s\n", shared_mem, unit_str);
@@ -46,7 +38,7 @@ void print_memory_info(int bytes, int kilobytes, int megabytes, int gigabytes, i
     printf("Available memory: %lu%s\n", available_mem, unit_str);
 
     if (show_total) {
-        unsigned long total = info.totalram / unit;
+        unsigned long total =used_mem+free_mem+shared_mem+buffer_cache+available_mem;
         printf("Total: %lu%s\n", total, unit_str);
     }
 }
@@ -54,7 +46,7 @@ void print_memory_info(int bytes, int kilobytes, int megabytes, int gigabytes, i
 int main(int argc, char *argv[]) {
     int option;
     int bytes = 0, kilobytes = 0, megabytes = 0, gigabytes = 0;
-    int tebibytes = 0, pebibytes = 0, show_total = 0;
+    int show_total = 0;
 
     while ((option = getopt(argc, argv, "bkmgt")) != -1) {
         switch (option) {
@@ -81,11 +73,11 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    if (!bytes && !kilobytes && !megabytes && !gigabytes && !tebibytes && !pebibytes) {
-        megabytes = 1;  // Default unit: Megabytes
+    if (!bytes && !kilobytes && !megabytes && !gigabytes) {
+        megabytes = 1;  
     }
 
-    print_memory_info(bytes, kilobytes, megabytes, gigabytes, tebibytes, pebibytes, show_total);
+    print_memory_info(bytes, kilobytes, megabytes, gigabytes, show_total);
 
     return 0;
 }
