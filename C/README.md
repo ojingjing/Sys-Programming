@@ -106,22 +106,22 @@ who: 현재 로그인한 사용자 표시
 2.false   
 ![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/27ef378a-1366-40f5-9d08-d181e33ae9e0)  
  
-3.ehco      
-![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/aa98c5ef-4860-492c-963f-f5fc2bfefda4)
+3.ehco         
+![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/aa98c5ef-4860-492c-963f-f5fc2bfefda4)    
 
-4.ehco -n
-![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/243a4d00-d53d-4dd6-bf8b-42c949d06305)
+4.ehco -n     
+![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/243a4d00-d53d-4dd6-bf8b-42c949d06305)    
 
-5.true    
-![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/1333aa84-509f-4163-9c64-6597ae2ff0ab)  
+5.true       
+![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/1333aa84-509f-4163-9c64-6597ae2ff0ab)     
  
-6.ls  
-![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/4f53c8f5-8c67-47f0-842e-d37e2bac6b42)
+6.ls     
+![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/4f53c8f5-8c67-47f0-842e-d37e2bac6b42)     
 
-7.ls -a  
-![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/e7ef45f9-b87d-435d-b0bb-3ac4a7aaf74c)  
+7.ls -a      
+![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/e7ef45f9-b87d-435d-b0bb-3ac4a7aaf74c)      
 
-8.ls -l  
+8.ls -l      
 ![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/10e38fdb-9cba-4965-8bfa-4e2b667af267)
 
 9.kill    
