@@ -31,10 +31,10 @@
 ![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/ab381fee-33d8-4840-a7dd-5254c5f77277)
 
 11.kill -9   
-![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/eb808ba0-787d-49f7-b0db-bb5859d1e650)   
+![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/eb808ba0-787d-49f7-b0db-bb5859d1e650)     
 
-12.cat 
-![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/9d556696-0cc8-49de-a266-303919ea267d)
+12.cat     
+![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/9d556696-0cc8-49de-a266-303919ea267d)    
 
 13.cat -s    
 두줄이상 공백 출력안함        
