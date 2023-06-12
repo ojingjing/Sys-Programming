@@ -36,19 +36,19 @@
 12.cat 
 ![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/9d556696-0cc8-49de-a266-303919ea267d)
 
-13.cat -s
-두줄이상 공백 출력안함
-![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/4cdde851-796b-4808-9e5c-ea9bd9121859)
+13.cat -s    
+두줄이상 공백 출력안함        
+![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/4cdde851-796b-4808-9e5c-ea9bd9121859)     
 
-14.cat -n     
-![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/0ec99665-88cf-4774-916c-928b27ff23dc)   
-![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/c2b36f1c-ecdc-4774-8f4a-c8c7a358b372)    
+14.cat -n        
+![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/0ec99665-88cf-4774-916c-928b27ff23dc)      
+![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/c2b36f1c-ecdc-4774-8f4a-c8c7a358b372)        
 
-15.cat -b    
-![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/75b0ef36-974c-4d3c-a9e1-79885b244c36)   
-![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/07396eb9-ff3e-47d5-beef-3d1e6e85ae20)    
+15.cat -b      
+![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/75b0ef36-974c-4d3c-a9e1-79885b244c36)     
+![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/07396eb9-ff3e-47d5-beef-3d1e6e85ae20)        
 
-16.free   
+16.free     
 ![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/256cbc23-0a80-4f5f-a08f-059431c4639c)   
 
 17.free -b    
@@ -91,8 +91,9 @@ load average: 0.08, 0.03, 0.00 : 시스템의 부하 평균을 나타냅니다. 
 28.date      
 ![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/0caa4de3-57db-4222-8bcc-8f077fdf49d3)    
  
-29.pwd     
-![image](https://github.com/ojingjing/Sys-Pramming/assets/48702158/3d60324e-ac33-4d8d-ab82-af0fd2443dad)     
+29.pwd        
+![pwd c](https://github.com/ojingjing/Sys-Programming/assets/48702158/4fa54fde-5782-4b6c-993a-10b4d28e8b34)      
+
 
 30.mkdir       
 ![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/db28035b-c86f-4880-85be-d0a2f31e7e29)
