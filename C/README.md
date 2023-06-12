@@ -101,7 +101,7 @@ who: 현재 로그인한 사용자 표시
 옵션: 따로 없음
 
 1.rev    
-![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/98312ed4-e20c-41ec-96ec-ca2ca49500f8    
+![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/98312ed4-e20c-41ec-96ec-ca2ca49500f8)     
 
 2.false   
 ![image](https://github.com/ojingjing/Sys-Programming/assets/48702158/27ef378a-1366-40f5-9d08-d181e33ae9e0)  
