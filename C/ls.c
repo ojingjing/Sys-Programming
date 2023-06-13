@@ -46,13 +46,10 @@ int main(int argc, char* argv[]) {
     int show_details = 0;
     int opt;
 
-    while ((opt = getopt(argc, argv, "al")) != -1) {
+    while ((opt = getopt(argc, argv, "a")) != -1) {
         switch (opt) {
             case 'a':
                 show_hidden = 1;
-                break;
-            case 'l':
-                show_details = 1;
                 break;
             default:
                 fprintf(stderr, "Usage: %s [-a] [-l]\n", argv[0]);
